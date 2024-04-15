@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, width=device-width">
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <title>C$50 Finance: Sentiments Analysis</title>
+  <style>
+    /* Additional CSS for styling */
+    .navbar-brand {
+      font-size: 42px; /* Increased font size */
+      text-decoration: none; /* Remove underline */
+      position: absolute; /* Position at the top left corner */
+      top: 0;
+      left: 0;
+      padding: 20px; /* Add some padding for better visibility */
+      white-space: nowrap; /* Prevent line breaks */
+    }
+    .navbar-brand span {
+      margin-right: -5px; /* Decrease spacing between letters */
+    }
+    .project-info {
+      font-size: 18px; /* Decrease font size */
+    }
+  </style>
+</head>
+<body>
+
+<nav class="bg-light border navbar navbar-expand-md navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+      <span style="color: #4285F4;">C</span>
+      <span style="color: #EA4335;">$</span>
+      <span style="color: #FBBC05;">5</span>
+      <span style="color: #34A853;">0</span>
+      <span style="color: #EA4335;"> Final</span>
+      <span style="color: #4285F4;">Project</span>
+      <br>
+      <span style="color: #ffffff;" class="project-info">By</span>
+      <span style="color: #ffffff;" class="project-info">Fazil</span>
+      <span style="color: #ffffff;" class="project-info">Sathar</span>
+    </a>
+  </div>
+</nav>
+
+<div class="container-fluid py-5 text-center">
+  <div class="login">
+    <h1>Sentiments Analysis</h1>
+    <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}" method="post">
+      <input type="text" name="Enter the product review here" placeholder="Enter the product review here" required="required" />
+      <button type="submit" class="btn btn-primary btn-block btn-large">Predict Sentiment</button>
+    </form>
+    <br>
+    <br>
+    {{ prediction_text }}
+    <p style="font-size: 12px; margin-top: 20px;">Fazil Sathar's Cs50 project</p>
+  </div>
+</div>
+
+</body>
+</html>

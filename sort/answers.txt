@@ -1,0 +1,17 @@
+sort1 uses: TODO
+reverse 0.23s
+sort 0.323s
+How do you know?: TODO
+
+sort2 uses: TODO
+reverse 0.054s
+sort 0.306s
+
+
+How do you know?: TODO
+
+sort3 uses: TODO #selection
+reverse 0.126
+sort 0.090s
+
+How do you know?: TODO

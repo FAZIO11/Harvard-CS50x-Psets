@@ -1,0 +1,2 @@
+Get input Height.(Repeat if input is less than 1 or more than 8 or not an number)
+cre
