@@ -17,3 +17,5 @@ While these projects represent individual efforts during the CS50 course, contri
 ## Referencing and Academic Honesty
 
 You are encouraged to refer to and draw inspiration from the projects in this portfolio for your own learning and projects. However, it's important to note that cheating or submitting work that is not your own is against CS50's academic honesty policy. Please ensure that you understand and adhere to the guidelines set forth by the course.
+
+![CS50x](https://github.com/FAZIO11/Harvard-CS50x-Psets/assets/108901411/3fa976b4-623d-4399-a0b6-4840fd724663)
